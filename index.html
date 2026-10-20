@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Mais de 100 estampas natalinas para pratos de vidro e guia passo a passo de decoupage. Por R$ 19,90.">
+<!-- COLE AQUI O CÓDIGO DO PIXEL DO FACEBOOK (Meta) -->
+<title>Pratos Natalinos Encantados</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+/* Layout: faixas alternadas pinheiro / creme, coluna central de 1120px, tudo empilha no celular */
+:root{
+  --pine:#123B2C; --pine-2:#18473A; --pine-line:#2F5E4B;
+  --cream:#FBF7EF; --sand:#F3ECDD; --card:#FFFFFF; --line:#E8DFCC;
+  --berry:#9E1B32; --gold:#C9A24B; --gold-soft:#E6C77A;
+  --ink:#1F2A24; --muted:#4A5650; --on-pine:#FBF7EF; --on-pine-muted:#D8E3DC;
+  --display:'Fraunces', Georgia, 'Times New Roman', serif;
+  --body:'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+*{box-sizing:border-box}
+body{background:var(--cream);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+.band{padding-block:72px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+.wrap{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:36px}
+.narrow{max-width:860px}
+.pine{background:var(--pine);color:var(--on-pine)}
+.sand{background:var(--sand)}
+h1,h2,h3{margin:0;text-wrap:balance}
+h1,h2{font-family:var(--display);font-weight:700;line-height:1.1}
+h1{font-size:clamp(34px,6vw,58px)}
+h2{font-size:clamp(28px,4.5vw,42px);color:var(--pine)}
+.pine h2{color:var(--on-pine)}
+h3{font-size:20px;color:var(--pine)}
+.pine h3{color:var(--on-pine)}
+p{margin:0}
+.muted{color:var(--muted)}
+.pine .muted{color:var(--on-pine-muted)}
+.center{text-align:center;align-items:center;display:flex;flex-direction:column;gap:12px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--berry)}
+.pine .eyebrow{color:var(--gold-soft)}
+.btn{display:inline-block;background:var(--berry);color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:18px 30px;border-radius:12px;min-height:48px;text-align:center}
+.btn:hover{background:#7A1426}
+.btn:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.topbar{background:var(--berry);color:#fff;text-align:center;font-size:15px;font-weight:500;padding-block:10px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+.hero{display:flex;flex-wrap:wrap;gap:40px;align-items:center}
+.hero > div{flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:20px}
+.tag{align-self:flex-start;border:1px solid var(--gold);color:var(--gold-soft);border-radius:999px;padding:5px 14px;font-size:14px;font-weight:500}
+.ticks{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:15px;color:var(--on-pine-muted)}
+.ph{border:2px dashed var(--gold);border-radius:20px;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;aspect-ratio:1/1;max-width:100%;font-size:15px}
+.pine .ph{background:var(--pine-2);color:var(--gold-soft)}
+.ph.light{background:var(--card);color:#6B5A2E;font-size:14px;border-radius:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;display:flex;flex-direction:column;gap:10px}
+.pine .card{background:var(--pine-2);border-color:var(--pine-line)}
+.num{width:50px;height:50px;border-radius:999px;background:var(--pine);color:var(--gold-soft);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:23px;font-weight:700}
+.step{display:flex;flex-direction:column;gap:10px}
+.split{display:flex;flex-wrap:wrap;gap:40px;align-items:center}
+.split > div{flex:1 1 360px;min-width:0}
+.stamps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.list{display:flex;flex-direction:column;gap:16px;margin-top:20px}
+.item{display:flex;gap:14px;align-items:flex-start}
+.item svg{flex:0 0 auto;margin-top:3px}
+.stat{text-align:center}
+.stat b{display:block;font-family:var(--display);font-size:32px;color:var(--pine)}
+.stat.hi{background:var(--berry);border-color:var(--berry);color:#fff}
+.stat.hi b{color:#fff}
+.offer{max-width:540px;margin:0 auto;background:var(--card);border:2px solid var(--gold);border-radius:26px;padding:36px 24px;display:flex;flex-direction:column;gap:18px;text-align:center;align-items:center}
+.offer ul{list-style:none;margin:0;padding:0;align-self:stretch;text-align:left;display:flex;flex-direction:column;gap:6px}
+.price{font-family:var(--display);font-weight:700;font-size:62px;line-height:1;color:var(--pine);font-variant-numeric:tabular-nums}
+.offer .btn{align-self:stretch}
+.guarantee{display:flex;flex-wrap:wrap;gap:24px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:32px}
+.seal{flex:0 0 auto;width:88px;height:88px;border-radius:999px;background:var(--pine);display:flex;align-items:center;justify-content:center}
+.guarantee > div:last-child{flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:8px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px}
+summary{cursor:pointer;font-weight:700;color:var(--pine);list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";float:right;color:var(--berry);font-size:22px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin-top:10px;color:var(--muted)}
+footer{text-align:center;color:var(--muted);font-size:14px;padding-block:32px;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+@media (prefers-reduced-motion: no-preference){.btn{transition:background .2s}}
+</style>
+<style>html{scroll-behavior:smooth}body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+
+
+<div class="topbar">Faça a tempo da ceia: acesso imediato após a compra</div>
+
+<section class="band pine">
+  <div class="wrap">
+    <div class="hero">
+      <div>
+        <span class="tag">Kit digital · Natal 2026</span>
+        <h1>Pratos natalinos de vidro lindos, mesmo sem saber desenhar</h1>
+        <p class="muted" style="font-size:19px">Mais de 100 estampas prontas para imprimir e um guia passo a passo de decoupage e pintura pelo verso. Decore sua ceia, presenteie quem você ama ou venda por encomenda neste Natal.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:14px;align-items:center">
+          <a class="btn" href="#oferta">Quero meu kit agora</a>
+          <span class="muted">Por apenas R$ 19,90</span>
+        </div>
+        <div class="ticks"><span>✓ Acesso imediato</span><span>✓ Garantia de 7 dias</span><span>✓ Para iniciantes</span></div>
+      </div>
+      <div><div class="ph">[FOTO OU VÍDEO: prato de vidro natalino pronto, em mesa posta com luzinhas]</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="center">
+      <h2>Para quem é este kit</h2>
+      <p class="muted" style="max-width:600px">Você não precisa ter experiência com artesanato. Se sabe usar pincel e tesoura, consegue.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <svg aria-hidden="true" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#9E1B32" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h18M5 11v9h14v-9M12 11V7M8 7a4 4 0 0 1 8 0"/></svg>
+        <h3>Quer uma ceia especial</h3>
+        <p class="muted">Monte uma mesa de Natal que todo mundo vai fotografar, gastando pouco.</p>
+      </div>
+      <div class="card">
+        <svg aria-hidden="true" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#9E1B32" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="1"/><path d="M12 8v13M3 12h18M12 8c-2-4-6-4-6-1s6 1 6 1c0 0 6 2 6-1s-4-3-6 1"/></svg>
+        <h3>Quer presentear</h3>
+        <p class="muted">Um presente feito à mão, personalizado e com cara de loja de decoração.</p>
+      </div>
+      <div class="card">
+        <svg aria-hidden="true" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#9E1B32" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9h-4a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4H9M12 7v2M12 17v-2"/></svg>
+        <h3>Quer renda extra no Natal</h3>
+        <p class="muted">Venda por encomenda para amigos, vizinhos e pelo WhatsApp nesta época de alta procura.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band sand">
+  <div class="wrap">
+    <div class="center"><h2>Como funciona, em 3 passos</h2></div>
+    <div class="grid">
+      <div class="step"><div class="num">1</div><h3>Escolha e imprima</h3><p class="muted">Escolha sua estampa natalina favorita e imprima em casa ou numa gráfica rápida.</p></div>
+      <div class="step"><div class="num">2</div><h3>Aplique no verso do prato</h3><p class="muted">Siga o guia para colar a estampa com a técnica de decoupage, sem bolhas e sem rasgar.</p></div>
+      <div class="step"><div class="num">3</div><h3>Pinte o fundo e finalize</h3><p class="muted">Pinte o verso com tinta PVA, aplique o acabamento e pronto: prato natalino de vitrine.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="split">
+      <div class="stamps">
+        <div class="ph light">[ESTAMPA: ursinho natalino]</div>
+        <div class="ph light">[ESTAMPA: Papai Noel]</div>
+        <div class="ph light">[ESTAMPA: guirlanda]</div>
+        <div class="ph light">[ESTAMPA: pinheiro e bolinhas]</div>
+      </div>
+      <div>
+        <h2>O que você recebe</h2>
+        <div class="list">
+          <div class="item"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9E1B32" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><strong>+100 estampas natalinas exclusivas</strong><br><span class="muted">Ursinhos, Papai Noel, renas, guirlandas, pinheiros e bolinhas. Você imprime em casa quantas vezes quiser.</span></div></div>
+          <div class="item"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9E1B32" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><strong>Guia ilustrado passo a passo</strong><br><span class="muted">Decoupage e pintura pelo verso explicadas do zero, com imagens de cada etapa.</span></div></div>
+          <div class="item"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9E1B32" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><strong>Lista de materiais baratos</strong><br><span class="muted">Tudo o que você precisa, com opções que cabem no bolso.</span></div></div>
+          <div class="item"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#9E1B32" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><strong>Acesso imediato e para sempre</strong><br><span class="muted">Receba no e-mail logo após a compra e use quantas vezes quiser.</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band pine">
+  <div class="wrap">
+    <div class="center"><span class="eyebrow">Bônus inclusos</span><h2>Comprando hoje, você leva também</h2></div>
+    <div class="grid">
+      <div class="card"><span class="eyebrow">Bônus 1</span><h3>Erros comuns e como corrigir</h3><p class="muted">Bolhas, rasgos e tinta descascando: como evitar e consertar.</p></div>
+      <div class="card"><span class="eyebrow">Bônus 2</span><h3>Embalagens para presente</h3><p class="muted">Ideias simples e baratas para entregar seu prato como presente de loja.</p></div>
+      <div class="card"><span class="eyebrow">Bônus 3</span><h3>Cuidados e conservação</h3><p class="muted">Como lavar e usar o prato para a decoração durar muitos Natais.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap narrow">
+    <div class="center"><h2>Quer vender? Faça as contas</h2><p class="muted">Um exemplo de quanto pode sobrar por prato vendido por encomenda.</p></div>
+    <div class="grid">
+      <div class="card stat"><span class="muted">Material por prato</span><b>R$ 15 a 25</b></div>
+      <div class="card stat"><span class="muted">Preço de venda</span><b>R$ 50 a 90</b></div>
+      <div class="card stat hi"><span>Pode sobrar por prato</span><b>até R$ 65</b></div>
+    </div>
+    <p class="muted" style="text-align:center;font-size:14px">Valores de exemplo. O resultado depende dos materiais, da sua região e de quanto você vende.</p>
+  </div>
+</section>
+
+<section class="band sand" id="oferta">
+  <div class="offer">
+    <span class="eyebrow">Oferta de Natal</span>
+    <h2 style="font-size:32px">Kit Pratos Natalinos Encantados</h2>
+    <ul>
+      <li>✓ +100 estampas natalinas</li>
+      <li>✓ Guia ilustrado passo a passo</li>
+      <li>✓ Lista de materiais</li>
+      <li>✓ 3 bônus inclusos</li>
+    </ul>
+    <div>
+      <div class="muted">12x de R$ 1,99 ou</div>
+      <div class="price">R$ 19,90</div>
+      <div class="muted" style="font-size:15px">à vista no Pix ou cartão</div>
+    </div>
+    <!-- TROQUE COLE_AQUI_O_LINK_DO_CHECKOUT pelo link do checkout da Kirvano -->
+    <a class="btn" href="COLE_AQUI_O_LINK_DO_CHECKOUT">Quero meu kit agora</a>
+    <div class="muted" style="font-size:14px">Pagamento seguro · Acesso imediato no seu e-mail</div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap narrow">
+    <div class="guarantee">
+      <div class="seal"><svg role="img" aria-label="Selo de garantia" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#E6C77A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.2 8 9 4.6-.8 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg></div>
+      <div><h2 style="font-size:26px">Garantia incondicional de 7 dias</h2><p class="muted">Se por qualquer motivo você não gostar do kit, é só pedir o reembolso em até 7 dias e devolvemos 100% do seu dinheiro.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" style="padding-top:0">
+  <div class="wrap narrow" style="gap:14px">
+    <div class="center" style="margin-bottom:10px"><h2>Perguntas frequentes</h2></div>
+    <details><summary>Preciso saber desenhar?</summary><p>Não. As estampas já vêm prontas, você só imprime, aplica e pinta o fundo.</p></details>
+    <details><summary>Que materiais vou precisar?</summary><p>Prato de vidro transparente, guardanapo branco ou papel de arroz para imprimir as estampas, cola, tinta PVA, pincel e verniz. Tudo fácil de achar em papelarias e lojas de utilidades. A lista completa vem no kit.</p></details>
+    <details><summary>Posso servir comida no prato?</summary><p>A decoração fica no verso, então a frente pode ser usada. O guia explica o acabamento certo e os cuidados de lavagem.</p></details>
+    <details><summary>Preciso ter impressora?</summary><p>Ajuda, mas não é obrigatório. Você pode imprimir em guardanapo na impressora de casa, em papel de arroz ou levar o arquivo numa gráfica rápida. O guia explica as três formas.</p></details>
+    <details><summary>Como recebo o kit?</summary><p>Logo após a confirmação do pagamento, você recebe o acesso no seu e-mail.</p></details>
+    <details><summary>Posso vender os pratos que eu fizer?</summary><p>Sim, os pratos que você produzir são seus para vender. Só não é permitido revender os arquivos das estampas.</p></details>
+  </div>
+</section>
+
+<section class="band pine">
+  <div class="wrap narrow center" style="gap:18px">
+    <h2>O Natal não espera. Comece hoje.</h2>
+    <p class="muted">Tenha seus pratos prontos a tempo da ceia, dos presentes e das encomendas.</p>
+    <a class="btn" href="#oferta">Quero meu kit por R$ 19,90</a>
+  </div>
+</section>
+
+<footer>
+  <div>[NOME DA SUA MARCA] · [SEU E-MAIL DE SUPORTE]</div>
+  <div>Produto digital. Os resultados variam de pessoa para pessoa.</div>
+</footer>
+
+</body>
+</html>
